@@ -70,6 +70,97 @@ postcondición
 fin clasificar4
 ```
 
+### Ejercicio 03 = Cálculo del importe del descuento
+**Algoritmo importe_descuento**
+
+**entrada**
+Precio : **REAL**
+* coste de un producto
+
+Descuento: (precio : **REAL**) : **REAL**
+* Importe del descuento acordado sobre “precio”.
+
+**precondición**
+Precio >= 0
+
+**Realización**
+```
+    si
+        precio < 100,00
+    entonces
+        # precio < 100,00 => no hay descuento
+        Resultado ← 0,00
+    si no si
+        precio < 500
+    entonces
+        * 100 ≤ precio < 500 => descuento del 5 %
+        Resultado ← precio x 0,05
+    si no
+        # precio ≥ 500 => descuento del 8 %
+        Resultado ← precio x 0,08
+    fin si
+```
+
+**postcondición**
+Precio < 10000  - **Resultado** = 0.00
+100 <= precio < 500 - **Resultado** = precio x 0.05
+500 <= precio - **Resultado** = precio x 0.08
+**fin importe_descuento**
+
+### Ejercicio 5 = Cálculo del importe del descuento para una familia dada en ADIF
+
+Algoritmo = calculo_descuento
+
+**entrada**
+
+Precio = **REAL**
+* Coste de un producto
+
+Descuento: (precio : **REAL**) : **REAL**
+* Importe del descuento acordado sobre “precio”.
+
+Hijos: **ENTERO**
+* Número de hijos de una familia
+
+
+**precondición**
+
+Precio >= 0
+
+**Realización**
+``` 
+    si
+        hijos = 0    
+    entonces
+        precio = precio => no hay descuento
+        Resultado ← precio
+    si
+        hijos = 1    
+    entonces
+        precio = precio*0.9 =>descuento de 10%        
+        Resultado ← precio*0.9
+    si
+        hijos = 2    
+    entonces
+        precio = precio*0.85 =>descuento de 15%        
+        Resultado ← precio*0.85
+    si
+        hijos = 3   
+    entonces
+        precio = precio*0.82 =>descuento de 18%        
+        Resultado ← precio*0.82
+    si
+        hijos = 3+n   
+    entonces
+        precio = precio*0.82-n/100 =>descuento de 18%        
+        Resultado ← precio*0.82-n/100
+   fin
+```
+**Postcondición**
+..
+**fin calculo_descuento**
+
+
 ### Ejercicio 08: Prima anual
 **Algoritmo prima anual:**
   * Importe de la prima anual en función del número
@@ -106,8 +197,8 @@ fin si
 
   # Cálculo de la prima anual
 fin si
-
+```
 postcondición
 
 fin prima_anual
-```
+
