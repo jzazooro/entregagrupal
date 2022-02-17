@@ -2,6 +2,54 @@
 
 La dirección de github de este repositorio es: [ github](https://github.com/jzazooro/entregagrupal/edit/main/README.md)
 
+### Ejercicio 01: Sucesor de un día de la semana
+
+**Tipo DIA estructura:**
+* (lunes, martes, miércoles, jueves, viernes, sábado, domingo)
+fin DIA
+
+**Algoritmo: Definición de sucesor por enumeración**
+
+```
+sucesor(día : DIA) : DIA
+    # El sucesor de `día' en la semana.
+ 
+Realización
+    siguiendo el valor de día hacer
+    	= 'lunes' :
+            Resultado ← 'martes'
+    	= 'martes' :
+            Resultado ← 'miércoles'
+    	= 'miércoles' :
+            Resultado ← 'jueves'
+    	= 'jueves' :
+            Resultado ← 'viernes'
+    	= 'viernes' :
+            Resultado ← 'sábado'
+    	= 'sábado' :
+            Resultado ← 'domingo'
+    	= 'domingo' :
+            Resultado ← 'lunes'
+        si no
+        	Nada
+    fin hacer
+ 
+postcondición
+	día = 'lunes' => Resultado = 'martes'
+	día = 'martes' => Resultado = 'miércoles'
+	...
+fin sucesor
+```
+
+
+
+
+
+
+
+
+
+
 ### Ejercicio 02: Colocar dos numerosrespecto a su suma y a su producto
 **Algoritmo clasificar4**
     * Clasifica `a', `b' `c' y `d' en orden creciente.
