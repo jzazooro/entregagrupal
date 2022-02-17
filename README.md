@@ -1,23 +1,22 @@
 # entregagrupal
 
 ### Ejercicio 08: Prima anual
-* Algoritmo prima anual:
-	* Importe de la prima anual en función del número
+**Algoritmo prima anual:**
+  * Importe de la prima anual en función del número
   * de accidentes, de la distancia recorrida y de la antigüedad
   * del conductor
   
-* entrada
+**entrada**
   * accidentes: ENTERO # Número de accidentes
   * distancia : ENTERO # Distancia recorrida
   * antigüedad : ENTERO # Antigüedad
   
-* Resultado: REAL
-
-* variable:
+**Resultado: REAL**
+**variable:**
   * prima_antigüedad : REAL
   * prima_distancia : REAL
   
-* realización
+**realización**
 ```
 si
   accidentes > 3
