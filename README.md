@@ -160,6 +160,37 @@ Precio >= 0
 ..
 **fin calculo_descuento**
 
+### Ejercicio 06: Descuento de microprocesadores
+
+**Algoritmo de coste**
+
+**Entrada**
+
+   * Numero de chips: Entero #Numero de chips que desea comprar
+   * Empresa: cadena # empresa a la que pertenece
+   
+**Variable**
+
+   * Descuento chips: Entero # descuento que se te aplica por el número de chips
+   * Descuento empresa: Entero # descuento que se te aplica por ser de una empresa
+   
+**Resultado: Entero**
+
+   * Descuento: Entero #Descuento total que se aplica a la compra
+   
+**Realización:**
+
+```
+     Si número de chips>10000 y chips<20000
+     Entonces tu descuento será del 10%
+     Si número de chips>20001 y chips<40000 
+     Entonces tu descuento será del 15%
+     Si número de chips>41000
+      Entonces tu descuento será del 20%
+     Descuento total= descuento chips más* descuento empresa
+````
+
+
 
 ### Ejercicio 08: Prima anual
 **Algoritmo prima anual:**
