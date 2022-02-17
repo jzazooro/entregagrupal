@@ -5,10 +5,13 @@ La dirección de github de este repositorio es: [ github](https://github.com/jza
 ###Ejercicio 02: Colocar dos numerosrespecto a su suma y a su producto
 **Algoritmo clasificar4**
     * Clasifica `a', `b' `c' y `d' en orden creciente.
+    
 **Entrada**
     *a, b, c, d : T → COMPARABLE
+    
 **precondición**
     *VERDADERO
+    
 **realización**
 ```
     clasificar3(a, b, c)
