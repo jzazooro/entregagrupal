@@ -1,5 +1,7 @@
 # entregagrupal
 
+La dirección de github de este repositorio es: [ github](https://github.com/jzazooro/entregagrupal/edit/main/README.md)
+
 ### Ejercicio 08: Prima anual
 **Algoritmo prima anual:**
   * Importe de la prima anual en función del número
