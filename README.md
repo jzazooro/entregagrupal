@@ -41,24 +41,15 @@ postcondición
 fin sucesor
 ```
 
-
-
-
-
-
-
-
-
-
 ### Ejercicio 02: Colocar dos numerosrespecto a su suma y a su producto
-**Algoritmo clasificar4**
-    * Clasifica `a', `b' `c' y `d' en orden creciente.
+**Algoritmo clasificar:**
+   * Clasifica a, b, c, y d en orden creciente.
     
 **Entrada**
-    * a, b, c, d : T → COMPARABLE
+   * a, b, c, d : T → COMPARABLE
     
 **precondición**
-    * VERDADERO
+   * VERDADERO
     
 **realización**
 ```
