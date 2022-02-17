@@ -1,6 +1,31 @@
 # entregagrupal
 
 La dirección de github de este repositorio es: [ github](https://github.com/jzazooro/entregagrupal/edit/main/README.md)
+###Ejercicio 02: Colocar dos numerosrespecto a su suma y a su producto
+**Algoritmo clasificar4**
+    * Clasifica `a', `b' `c' y `d' en orden creciente.
+**Entrada**
+    *a, b, c, d : T → COMPARABLE
+**precondición**
+    *VERDADERO
+**realización**
+```
+    clasificar3(a, b, c)
+    # a ≤ b ≤ c ; situar `d'
+    si
+        d < a
+    entonces
+        # a > d ; b ≤ c
+        intercambiar(a, d)
+        # a ≤ d ; b ≤ c
+    fin si
+    # a ≤ d ; b ≤ c
+    clasificar3(b, c , d)
+    # a ≤ b ≤ c ≤ d
+postcondición
+    a ≤ b ≤ c ≤ d
+fin clasificar4
+```
 
 ### Ejercicio 08: Prima anual
 **Algoritmo prima anual:**
