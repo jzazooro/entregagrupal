@@ -102,9 +102,13 @@ Precio >= 0
 ```
 
 **postcondición**
+
 Precio < 10000  - **Resultado** = 0.00
+
 100 <= precio < 500 - **Resultado** = precio x 0.05
+
 500 <= precio - **Resultado** = precio x 0.08
+
 **fin importe_descuento**
 
 ### Ejercicio 5 = Cálculo del importe del descuento para una familia dada en ADIF
@@ -190,6 +194,59 @@ Precio >= 0
      Descuento total= descuento chips más* descuento empresa
 ````
 
+## Ejercicio 07: Viaje escolar
+
+**Algoritmo viaje_escolar:**
+   * Cálculo del precio de coste por alumno
+   * Cálculo del cote global del viaje en función de la cantidad de alumnos
+   
+**entrada**
+   * numero de alumnos: ENTERO
+   * numero de días: ENTERO
+   
+**Resultado: REAL**
+
+**variable**
+   * coste del trayecto por alumno: REAL
+   * coste del alojamiento por alumno: REAL
+   * coste de la comida por alumno: REAL
+   * coste del trayecto total: REAL
+   * coste de la comida total: REAL
+   * coste del alojamiento total: REAL
+   * coste total por alumno: REAL
+   * coste global: REAL
+   
+**realización**
+
+```
+   coste de la comida por alumno ← 3,50€
+   si
+	numero de alumnos > 25
+   entonces
+	coste del trayecto por alumno ←  61,00€
+   si no
+	coste del trayecto por alumno ← 67,30€
+   si	
+	numero de alumnos <= 30
+   entonces
+	coste del alojamiento por alumno ← 4,75€
+   si no
+ 	si
+		31 <= numero de alumnos <= 35
+	entonces
+		coste del alojamiento por alumno ← 4,00€
+   si no
+	coste del alojamiento por alumno ← 3,50€
+	coste del trayecto total ← coste del trayecto por alumno * numero de alumnos
+	coste del alojamiento total ← coste del alojamiento por alumno * numero de alumnos
+	coste de la comida total ← coste de la comida por alumno * numero de alumnos
+	coste global ←  coste del trayecto total + coste del alojamiento total + coste de la comida total
+	coste total del alumno ←  coste de la comida por alumno + coste del alojamiento por alumno + coste de la comida por alumno
+   fin si
+   …
+  ```
+**postcondicion**
+	* fin viaje_escolar
 
 
 ### Ejercicio 08: Prima anual
@@ -229,7 +286,6 @@ fin si
   # Cálculo de la prima anual
 fin si
 ```
-postcondición
-
-fin prima_anual
+**postcondición**
+	* fin prima_anual
 
