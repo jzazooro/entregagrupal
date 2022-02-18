@@ -102,9 +102,13 @@ Precio >= 0
 ```
 
 **postcondición**
+
 Precio < 10000  - **Resultado** = 0.00
+
 100 <= precio < 500 - **Resultado** = precio x 0.05
+
 500 <= precio - **Resultado** = precio x 0.08
+
 **fin importe_descuento**
 
 
@@ -197,8 +201,11 @@ Precio >= 0
         Resultado ← precio*0.82-n/100
    fin
 ```
+
 **Postcondición**
+
 ..
+
 **fin calculo_descuento**
 
 ### Ejercicio 06: Descuento de microprocesadores
